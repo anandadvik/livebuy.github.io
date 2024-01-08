@@ -454,7 +454,7 @@
 	}
 	.hiros {
 	  width: 100%;
-	  height: 494px;
+	  height: 555px;
 	  margin: 43px 0;
 	  padding: 0rem 0;
 	  background-color: #FFF0;
@@ -463,7 +463,7 @@
 	    position: relative;
 	    width: 100%;
 	    overflow: hidden;
-	    padding: 42px 0 300px;
+	    padding: 42px 0 312px;
 	  }
 	.hiros .carousel-caption {
 		position: absolute;
@@ -482,7 +482,7 @@
 	  display: flex;
 	  position: relative;
 	  margin-top: -1.5625rem;
-	 margin-left: -22px;
+	 margin-left: -7px;
 	}
 	.hiros .homeImages {
 	    width: 100%;
@@ -533,6 +533,7 @@
 	  	background-color: #FF6C3E;
 	  	transition: .5s;
 	  	border-radius: 8px;
+	  	width: 50%;
 	}
 	.btnhome1:hover {
 		margin-left: 0;
