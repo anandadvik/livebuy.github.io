@@ -81,7 +81,7 @@
 					      <li  style="font-weight: 600; color: #FF6C3E;"><span id="seconds"></span></li>
 					      <li  style="font-weight: 500; color: #333232;"><span id="seconds"></span>hrs</li>
 					    </ul>
-					</div>
+				</div>
 			    </div>
 		    </div>
 		  </div>
@@ -118,7 +118,7 @@
 		            </div>            
 	          </div>
 	          <div class="row">
-	            <div class="col-12 text-sm-center col-sm-12 col-md-12 col-xxl-6 col-lg-6">
+	            <div class="col-12 col-sm-12 col-md-12 col-xxl-6 col-lg-6 d-flax">
 	              	<a href="Become_a_host_Form.html"><button type="button"  class="btn btnhome">Become a host now</button>
 	              	</a>
 					<a href="#rentForms"><button type="button" class="btn btnhome1">Rent now</button>
@@ -155,7 +155,7 @@
 	                </li>
 	              </ul>
 	            </div>
-	            <div class="card-body" >
+	            <div class="card-body">
 	                <!-- Tab panes -->
 	                <div class="tab-content"  id="rentForms">
 	                  	<div class="tab-pane active" id="home" role="tabpanel">
@@ -221,7 +221,7 @@
 				                    </div>  
 				                  </div>
 				                </div>
-				                <div class="row" >
+				                <div class="row"  id="rentForms">
 				                  <div class="col-12 col-sm-12 col-ms-12 col-xxl-6 col-lg-6 p-md-0 m-md-0">
 				                    <div class="box66">
 				                      <img src="images/heart-alt.svg" class="img-fluid migs" alt="Responsive image">
@@ -260,7 +260,7 @@
 				                </div>
 				                <div class="col-12 col-ms-12 col-ms-12 col-xxl-6 col-lg-6">
 				                  	<div class="forms">
-				                  		<form name="myForm" method="post" id="myform" action="https://script.google.com/macros/s/AKfycbxdYKpR8frcqVWoF9-X_ZChUEH_WyXAOciFhN8iWtm59LzBGYFiL70J9vTMc9kKbx60dQ/exec">
+				                  		<form name="myForm" method="post" id="myform" action="https://script.google.com/macros/s/AKfycby2YWOnLXALXGO2PyxeAJj8Rr9F-h0TIr6F82SZHvNRFcj9yo_RWPKdjxvdIbtBYiHE/exec">
 											<div class="mb-3">
 											    <input type="name" name="RentName" class="form-control" placeholder="Full Name" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 											</div>
@@ -385,7 +385,7 @@
 				                </div>
 				                <div class="col-12 col-ms-12 col-ms-12 col-xxl-6 col-lg-6">
 				                  	<div class="forms">
-				                  		<form name="myForm" method="post" id="myform" action="https://script.google.com/macros/s/AKfycbwqXFFs_2WBVVwMOlc-NpV8lBG-2nehk58702iM-p78AEHPhrF96WYJOUdYP8VXCkCC/exec">
+				                  		<form name="myForm1" method="post" id="myform1" action="https://script.google.com/macros/s/AKfycby2YWOnLXALXGO2PyxeAJj8Rr9F-h0TIr6F82SZHvNRFcj9yo_RWPKdjxvdIbtBYiHE/exec">
 											<div class="mb-3">
 											    <input type="name" name="RentName" class="form-control" placeholder="Full Name" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 											</div>
@@ -1121,6 +1121,23 @@
 	<script>			
 	window.addEventListener("load", function() {
 	  const form = document.getElementById('myform');
+	  form.addEventListener("submit", function(e) {
+	    e.preventDefault();
+	    const data = new FormData(form);
+	    const action = e.target.action;
+	    fetch(action, {
+	      method: 'POST',
+	      body: data,
+	    })
+	    .then(() => {
+	      // alert("Success!");
+	    	window.location.href = "Livebuy_home.html";
+	    })
+	  });
+	});
+
+	window.addEventListener("load", function() {
+	  const form = document.getElementById('myform1');
 	  form.addEventListener("submit", function(e) {
 	    e.preventDefault();
 	    const data = new FormData(form);
