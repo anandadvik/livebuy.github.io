@@ -306,6 +306,7 @@ Body {
   transition: .5s;
   border-radius: 10px;
   margin-left: 13px;
+  width: 36%;
 }
 .btnhome1:hover {
   transform: scale(1.1);
