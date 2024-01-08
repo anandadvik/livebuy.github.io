@@ -266,12 +266,16 @@ Body {
 .box008898 {
   margin-left: -79px;
 }
-
+.d-flax a {
+    color: #0d6efd;
+    text-decoration: none;
+}
 .value {
   font-weight: 600;
   color: #FF9900;
   font-size: 20px;
 }
+
 .btnhome {
   color: #fff;
   font-size: 0.875rem;
