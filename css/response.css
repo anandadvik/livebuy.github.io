@@ -6,9 +6,9 @@
 	.navbar {
 	  width: 100%;
 	  height: auto;
-	  position: fixed;
+	  position: absolute;
 	  background-color: #fff;
-	  box-shadow: 0px 1px 1px 0px 1px 1px #d9d9d9;;
+	  box-shadow: 0px 1px 1px #0px 1px 1px #d9d9d9;;
 	  z-index: 1009999;
 	  top: 0;
 	  padding-top: 12px;
@@ -20,8 +20,7 @@
 	}
 	.navbar-light img {
 		margin-top: -3px;
-	    width: 1.62rem;
-		height: 1.3rem;
+	    width: 27px;
 	}
 	button:focus:not(:focus-visible){ 
 	   background: #FF6C3E;
@@ -504,6 +503,10 @@
 	  font-family: inter;
 	  margin-left: 16px;
 	}
+	.d-flax a {
+	  color: #0d6efd;
+	  text-decoration: none;
+	}
 	.btnhome {
 		margin-left: 0;
 		margin-top: 10px;
@@ -517,6 +520,21 @@
 	  	border-radius: 8px;
 	}
 	.btnhome:hover {
+		margin-left: 0;
+	}
+	.btnhome1 {
+		margin-left: 0;
+		margin-top: 10px;
+		color: #fff;
+	  	font-size: 0.6875rem;
+	  	font-weight: 400;
+	  	padding: 10px 25px 12px 25px;
+	  	font-family: poppins;
+	  	background-color: #FF6C3E;
+	  	transition: .5s;
+	  	border-radius: 8px;
+	}
+	.btnhome1:hover {
 		margin-left: 0;
 	}
 
@@ -680,7 +698,7 @@
 		display: flex;
 	    border: 0;
 	    padding: 15px 0rem;
-	    margin-left: 120px;	  	
+	    margin-left: 129px;	  	
 	}
 	.OurCharges .text011 {
 	  	width: 100%;
@@ -837,8 +855,7 @@
 	  border-bottom: 32px solid #e8eaec;
 	}
 	.Perks .form-hom .EarlyAccess {
-	 	margin-left: 0px;
-		text-align: left;
+	 	margin-left: -92px;
 	    font-size: 1.125rem;
 	    font-weight: 500;
 	    font-family: Poppins;
@@ -1323,7 +1340,7 @@
 	}
 	.scene .card__face--back h3 {
 	  font-size: 0.625rem;
-	  /* position: absolute; */
+	  position: absolute;
 	  left: 2rem;
 	  bottom: 2rem;
 	  text-align: left;
@@ -1787,13 +1804,11 @@
 		}
 
 		.OurCharges .card-body .containers, .card .card-header {
-		  padding: 0px 1rem;
+		  padding: 0rem 1rem;
 		}
 
 
-		.col-12.col-sm-12.col-ms-6.col-xxl-4.col-lg-4.p-xxl-0.mr-5.ml-2, .col-12.col-sm-12.col-ms-6.col-xxl-4.col-lg-4.p-xxl-0.mr-5 {
-		  margin-left: 10px;
-		}
+
 }		
 
 
