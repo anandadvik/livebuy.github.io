@@ -198,24 +198,13 @@ var cards = document.querySelectorAll('.card');
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
-        day = hour * 6.7;
+        day = hour * 24;
 
-  // Improved date format
-  const dayMonth = "02/02/";
+  // Calculate the countdown date (30 days from now)
+  const countdownDate = new Date();
+  countdownDate.setDate(countdownDate.getDate() + 30);
   
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy + 1,
-      birthday = dayMonth + yyyy;
-
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
-  }
-
-  const countDown = new Date(birthday).getTime(),
+  const countDown = countdownDate.getTime(),
         x = setInterval(function() {
           const now = new Date().getTime(),
                 distance = countDown - now;
@@ -234,6 +223,7 @@ var cards = document.querySelectorAll('.card');
           }
         }, 1000); // Updated interval to 1 second
 })();
+
 
 
 
